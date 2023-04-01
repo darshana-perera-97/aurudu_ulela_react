@@ -32,7 +32,57 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* custom css */
+
+body {
+  background: #fdc11b;
+}
+
+.main-background {
+  background-image: url("./Assets/Backgrounds/back_02.png");
+  /* width: 300vh; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 70vh
+}
+
+.main-heading {
+  margin-left: 20%;
+  padding-top: 15px;
+}
+
+.blink {
+  animation: blinker 5s linear infinite;
+  color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.main_wish {
+  height: 25vh;
+  padding-top: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .main_wish {
+    height: 10vh;
+  }
+
+  .main-heading {
+    margin-left: 12%;
+    padding-top: 0px;
+  }
+    .main-background {
+      height: 30vh
+    }
 }
